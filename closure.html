@@ -1,0 +1,12 @@
+<script>
+  function grand() {
+    let x = 100;
+    return () => {
+      let x = 200;
+      return () => {
+        console.log(x);
+      };
+    };
+  }
+  console.dir(grand);
+</script>
